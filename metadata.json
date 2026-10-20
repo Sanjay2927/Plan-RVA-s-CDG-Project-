@@ -1,0 +1,6 @@
+{
+  "name": "Regional Planning Data Catalog",
+  "description": "SharePoint & GeoHub Central Repository for unified GIS boundaries, socio-economic projections, and regional zoning archives with GovAI assistant.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

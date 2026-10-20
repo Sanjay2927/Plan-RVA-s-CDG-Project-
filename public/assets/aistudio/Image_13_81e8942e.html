@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#0b1c30", "on-error-container": "#93000a", "on-secondary": "#ffffff", "secondary-container": "#86f2e4", "primary-fixed-dim": "#b0c9e8", "on-tertiary": "#ffffff", "surface-container-high": "#dce9ff", "on-secondary-fixed": "#00201d", "surface-bright": "#f8f9ff", "secondary-fixed": "#89f5e7", "on-primary-container": "#7991af", "on-primary-fixed": "#011d35", "tertiary": "#0a0050", "tertiary-container": "#19008b", "on-primary-fixed-variant": "#314863", "on-surface-variant": "#43474d", "on-tertiary-fixed-variant": "#372abf", "on-secondary-container": "#006f66", "surface-variant": "#d3e4fe", "on-primary": "#ffffff", "on-background": "#0b1c30", "error": "#ba1a1a", "outline": "#74777e", "primary-container": "#0f2942", "surface-container-lowest": "#ffffff", "error-container": "#ffdad6", "surface": "#f8f9ff", "on-tertiary-fixed": "#100069", "primary-fixed": "#d1e4ff", "background": "#f8f9ff", "on-secondary-fixed-variant": "#005049", "surface-tint": "#49607c", "inverse-primary": "#b0c9e8", "secondary": "#006a61", "outline-variant": "#c3c6ce", "surface-container-low": "#eff4ff", "primary": "#001428", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#c3c0ff", "inverse-surface": "#213145", "tertiary-fixed": "#e3dfff", "surface-dim": "#cbdbf5", "on-tertiary-container": "#847fff", "surface-container": "#e5eeff", "on-error": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "surface-container-highest": "#d3e4fe" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "space-xs": "0.25rem", "margin": "1rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem" }, "fontFamily": { "label-lg": ["Public Sans"], "body-lg": ["Public Sans"], "headline-xl-mobile": ["Public Sans"], "headline-xl": ["Public Sans"], "label-sm": ["Public Sans"], "headline-sm": ["Public Sans"], "tabular-data": ["Public Sans"], "headline-md": ["Public Sans"], "headline-lg": ["Public Sans"], "body-md": ["Public Sans"], "body-sm": ["Public Sans"], "label-md": ["Public Sans"], "headline-lg-mobile": ["Public Sans"] }, "fontSize": { "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-xl-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600"}], "tabular-data": ["13px", {"lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-sm h-14"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">database</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">Data Catalog</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Regional Planning Agency</span></div></div><div class="px-space-md"><div class="bg-surface-container rounded-lg p-space-xs px-space-sm flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span><span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary">Portal Node • Live</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-lg text-label-lg flex-1">Home</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="browse-by-topic" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-label-lg text-label-lg flex-1">Browse by Topic</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-datasets" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg flex-1">My Datasets</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="add-dataset" href="#"><span class="material-symbols-outlined text-[20px]">add_box</span><span class="font-label-lg text-label-lg flex-1">Add Dataset</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">Restricted</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="ask-govai" href="#"><span class="material-symbols-outlined text-[20px] text-secondary">auto_awesome</span><span class="font-label-lg text-label-lg flex-1">Ask GovAI</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">GovAI</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manage-access" href="#"><span class="material-symbols-outlined text-[20px]">lock</span><span class="font-label-lg text-label-lg flex-1">Manage Access</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container text-on-primary">Admin</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span><span class="font-label-lg text-label-lg flex-1">Help</span></a></nav></div><div class="px-space-md pt-space-sm"><div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-md text-label-md text-on-surface">RPA Core Standards</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Compliant with State Geographic &amp; Metadata Directive v4.2</p></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">home_pin</span><span class="font-body-md text-body-md font-medium">Civil Spatial Registry</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="font-label-md text-label-md text-secondary">Internal Catalog View</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Spatial DB: Synced</span></div><div class="flex items-center gap-space-md pl-space-md"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Alex Mercer</span><span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary px-1.5 py-0.5 rounded tracking-wide font-semibold">Principal Data Manager</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-xl pb-space-xl min-h-screen"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden bg-primary text-on-primary rounded-xl p-space-xl shadow-md mb-space-xl">
+<div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-secondary opacity-10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-surface-variant opacity-15 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 max-w-4xl flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="inline-flex items-center gap-space-xs px-2.5 py-1 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Authoritative Regional Gateway
+        </span>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-low text-tertiary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px] text-tertiary">verified</span>
+          State Metadata v4.2 Validated
+        </span>
+</div>
+<div>
+<h1 class="font-headline-xl text-headline-xl text-on-primary tracking-tight">
+          Regional Planning Data Catalog
+        </h1>
+<p class="font-body-lg text-body-lg text-primary-fixed-dim mt-space-xs max-w-2xl">
+          SharePoint &amp; GeoHub Central Repository for unified GIS boundaries, socio-economic projections, and regional zoning archives.
+        </p>
+</div>
+<div class="mt-space-sm bg-surface-container-lowest rounded-xl p-space-sm shadow-xl text-on-surface">
+<div class="flex items-center gap-space-xs p-1 bg-surface-container-low rounded-lg w-fit mb-space-sm">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-sm transition-all focus:outline-none" id="mode-catalog-btn" onclick="setSearchMode('catalog')">
+<span class="material-symbols-outlined text-[18px] text-primary">search</span>
+            Search catalog
+          </button>
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all focus:outline-none" id="mode-govai-btn" onclick="setSearchMode('govai')">
+<span class="material-symbols-outlined text-[18px] text-secondary">auto_awesome</span>
+<span>Ask GovAI</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container">GovAI</span>
+</button>
+</div>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined text-outline absolute left-space-md pointer-events-none text-[22px]" id="search-icon">search</span>
+<input class="w-full pl-12 pr-32 py-3 bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/70 font-body-lg text-body-lg rounded-lg focus:outline-none focus:bg-surface-container-lowest transition-all" id="main-search-input" placeholder="Search spatial layers, tabular spreadsheets, agency custodians, or metadata tags..." type="text"/>
+<div class="absolute right-2 flex items-center gap-space-xs">
+<button class="bg-primary hover:bg-primary-container text-on-primary px-space-md py-2 rounded font-label-lg text-label-lg transition-colors flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+<span>Execute</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md mb-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Total Datasets</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">142</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">+6 this month</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">100% compliant with ISO 19115 schema</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[26px]">folder_copy</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">GeoHub Synced</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-xl text-headline-xl text-secondary font-bold">48</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ 52 eligible</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">ArcGIS Server &amp; Feature Services active</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-secondary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[26px]">public</span>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">SharePoint Repositories</span>
+<div class="flex items-baseline gap-space-xs mt-1">
+<span class="font-headline-xl text-headline-xl text-tertiary-container font-bold">12</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">All Online</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Departmental document drives linked</span>
+</div>
+<div class="w-12 h-12 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[26px]">cloud_sync</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">filter_list</span>
+<span class="font-label-lg text-label-lg text-on-surface">Structured Catalog Filters</span>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" onclick="resetFilters()">
+<span class="material-symbols-outlined text-[14px]">restart_alt</span>
+        Reset all
+      </button>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap text-body-sm font-body-sm">
+<span class="w-20 shrink-0 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">File type:</span>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" data-group="type" data-val="excel">
+<span class="material-symbols-outlined text-[16px] text-secondary">table_view</span>
+            Excel
+          </button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" data-group="type" data-val="csv">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">grid_on</span>
+            CSV
+          </button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" data-group="type" data-val="gis">
+<span class="material-symbols-outlined text-[16px] text-primary">layers</span>
+            GIS
+          </button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" data-group="type" data-val="pdf">
+<span class="material-symbols-outlined text-[16px] text-error">picture_as_pdf</span>
+            PDF
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap text-body-sm font-body-sm">
+<span class="w-20 shrink-0 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Topic:</span>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-group="topic" data-val="demographics">Demographics</button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-group="topic" data-val="economy">Economy</button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-group="topic" data-val="environment">Environment</button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-group="topic" data-val="transportation">Transportation</button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-group="topic" data-val="landuse">Land Use</button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors" data-group="topic" data-val="housing">Housing</button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap text-body-sm font-body-sm">
+<span class="w-20 shrink-0 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Plan:</span>
+<div class="flex items-center gap-space-xs flex-wrap">
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" data-group="plan" data-val="eds">
+<span class="material-symbols-outlined text-[15px] text-secondary">assignment</span>
+            Economic Development Strategy
+          </button>
+<button class="filter-chip px-space-sm py-1 rounded-md bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" data-group="plan" data-val="nrp">
+<span class="material-symbols-outlined text-[15px] text-secondary">park</span>
+            Natural Resources Plan
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap text-body-sm font-body-sm">
+<span class="w-20 shrink-0 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Owner:</span>
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<select class="px-space-sm py-1 bg-surface-container rounded-md text-on-surface font-label-md text-label-md appearance-none pr-8 cursor-pointer focus:outline-none">
+<option value="">Filter by Staff / Custodian...</option>
+<option value="jdoe">J. Doe (Planning Analytics)</option>
+<option value="asmith">A. Smith (GIS Coordinator)</option>
+<option value="blee">B. Lee (Transit Modeler)</option>
+<option value="amercer">Alex Mercer (Data Manager)</option>
+</select>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant absolute right-2 top-1.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl">
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">history</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Recently Updated Datasets</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Showing latest administrative commits</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">table_chart</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary font-semibold transition-colors" href="#">
+                    County Population Estimates 2020
+                  </a>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                    Demographics
+                  </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                    Excel (.xlsx)
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Annual census re-benchmarked tract-level demographics with age-cohort subdivisions and household income distributions.
+                </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 bg-surface-container-low px-2 py-1 rounded">
+              Updated 2 days ago
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">person</span>
+                Custody: J. Doe
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-tabular-data text-tabular-data text-on-surface-variant">SharePoint: /Census/Demographics_v2.xlsx</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                Preview
+              </button>
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                Fetch
+              </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[22px]">map</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary font-semibold transition-colors" href="#">
+                    Regional Parks Boundaries
+                  </a>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                    Environment
+                  </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                    GIS Shapefile / GeoJSON
+                  </span>
+<span class="px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                    GeoHub Published
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Municipal conservation zones, perimeter rights-of-way, and public recreational trail access corridors.
+                </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 bg-surface-container-low px-2 py-1 rounded">
+              Updated Jan 2026
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">person</span>
+                Custody: A. Smith
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-tabular-data text-tabular-data text-secondary font-medium">ESRI REST: /Hosted/Parks_Boundary/FeatureServer</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">map</span>
+                Web Map
+              </button>
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+                Metadata
+              </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">bar_chart</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary font-semibold transition-colors" href="#">
+                    Employment by Industry
+                  </a>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                    Economy
+                  </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                    CSV (Delimited)
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Quarterly NAICS 2-digit industry wage and employment quarterly rolls compiled with state labor agency data.
+                </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 bg-surface-container-low px-2 py-1 rounded">
+              Updated Feb 2026
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">person</span>
+                Custody: J. Doe
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-tabular-data text-tabular-data text-on-surface-variant">SharePoint: /EconDevelopment/Labor_Q4_2025.csv</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                Preview
+              </button>
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                Fetch
+              </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-primary text-[22px]">water</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary font-semibold transition-colors" href="#">
+                    Floodplain Areas
+                  </a>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                    Environment
+                  </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                    GIS Feature Class
+                  </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-outline">help_outline</span>
+                    GeoHub Status: Unsure
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  FEMA 100-year and 500-year flood hazard areas updated with regional hydraulic study cross-sections.
+                </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 bg-surface-container-low px-2 py-1 rounded">
+              Updated Dec 2025
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">person</span>
+                Custody: A. Smith
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-tabular-data text-tabular-data text-on-surface-variant">Sync state: Pending Verification</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">sync_problem</span>
+                Audit Sync
+              </button>
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+                Metadata
+              </button>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">directions_bus</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<a class="font-headline-sm text-headline-sm text-on-surface hover:text-secondary font-semibold transition-colors" href="#">
+                    Commute Mode Share
+                  </a>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                    Transportation
+                  </span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm">
+                    Excel (.xlsx)
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                  Five-year American Community Survey journey-to-work aggregates divided by transportation analysis zones (TAZ).
+                </p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0 bg-surface-container-low px-2 py-1 rounded">
+              Updated Nov 2025
+            </span>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-body-sm font-body-sm text-on-surface-variant bg-surface-container-low px-space-sm py-1.5 rounded-lg">
+<div class="flex items-center gap-space-sm">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-outline">person</span>
+                Custody: B. Lee
+              </span>
+<span class="text-outline-variant">•</span>
+<span class="font-tabular-data text-tabular-data text-on-surface-variant">SharePoint: /Transit/Commute_TAZ_Summary.xlsx</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2 py-1 rounded hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+                Preview
+              </button>
+<button class="px-2 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm flex items-center gap-1 hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[16px]">download</span>
+                Fetch
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="xl:col-span-4 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[20px]">map</span>
+<span class="font-label-lg text-label-lg">Regional Planning Scope</span>
+</div>
+<div class="w-full h-44 bg-cover bg-center rounded-lg shadow-inner relative overflow-hidden" data-location="Regional Planning Area" style="background-image: url('https://www.gstatic.com/labs-code/stitch/stitch-placeholder-300x300.svg')">
+<div class="absolute bottom-2 left-2 bg-surface/90 backdrop-blur-md px-2 py-1 rounded font-label-sm text-label-sm text-on-surface">
+            County Boundary Grid • WGS 84
+          </div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Tri-county jurisdictional boundary. 24 municipal civil divisions mapped with live sync to the State Open Data Portal.
+        </p>
+</div>
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Catalog Storage by Format</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">142 total</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface mb-1">
+<span>GIS Geodatabases &amp; Layers</span>
+<span class="font-tabular-data text-tabular-data">48 (34%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-primary" style="width: 34%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface mb-1">
+<span>Tabular (Excel &amp; CSV)</span>
+<span class="font-tabular-data text-tabular-data">65 (46%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary" style="width: 46%;"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface mb-1">
+<span>Reports &amp; Policy PDFs</span>
+<span class="font-tabular-data text-tabular-data">29 (20%)</span>
+</div>
+<div class="w-full h-2 rounded bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary-container" style="width: 20%;"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface">Data Verification Status</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Audit Active</span>
+</div>
+<div class="flex items-center gap-space-md">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-secondary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="92, 100" stroke-linecap="round" stroke-width="3.5"></path>
+<text class="fill-current text-on-surface font-headline-sm font-bold text-center" font-size="9" text-anchor="middle" x="18" y="20.5">92%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Metadata Completeness</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">131 of 142 records have complete spatial extents &amp; contact points.</span>
+</div>
+</div>
+</div>
+<div class="bg-secondary-container/20 rounded-xl p-space-md flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-secondary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Security &amp; Retention Guard</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Public disclosure classification active. Datasets marked restricted require authenticated state single sign-on.
+        </p>
+</div>
+</div>
+</div>
+<div class="fixed bottom-space-md right-space-md z-40 flex items-center">
+<button class="flex items-center gap-space-xs px-3 py-1.5 bg-primary text-on-primary rounded-full shadow-lg hover:bg-primary-container transition-all focus:outline-none" onclick="setSearchMode('govai'); document.getElementById('main-search-input').focus();">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-bold">GovAI</span>
+<span class="font-label-md text-label-md tracking-wide">Assistant</span>
+</button>
+</div>
+</div>
+<script>
+  function setSearchMode(mode) {
+    const input = document.getElementById('main-search-input');
+    const catalogBtn = document.getElementById('mode-catalog-btn');
+    const govaiBtn = document.getElementById('mode-govai-btn');
+    const searchIcon = document.getElementById('search-icon');
+
+    if (mode === 'govai') {
+      input.placeholder = 'Ask GovAI where to find data, e.g., latest county population data';
+      catalogBtn.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all focus:outline-none';
+      govaiBtn.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-sm transition-all focus:outline-none';
+      searchIcon.innerText = 'auto_awesome';
+      searchIcon.classList.add('text-secondary');
+      searchIcon.classList.remove('text-outline');
+    } else {
+      input.placeholder = 'Search spatial layers, tabular spreadsheets, agency custodians, or metadata tags...';
+      catalogBtn.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-lg text-label-lg bg-surface-container-lowest text-on-surface shadow-sm transition-all focus:outline-none';
+      govaiBtn.className = 'flex items-center gap-space-xs px-space-md py-1.5 rounded-md font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all focus:outline-none';
+      searchIcon.innerText = 'search';
+      searchIcon.classList.remove('text-secondary');
+      searchIcon.classList.add('text-outline');
+    }
+  }
+
+  document.querySelectorAll('.filter-chip').forEach(button => {
+    button.addEventListener('click', function() {
+      const isSelected = this.getAttribute('data-selected') === 'true';
+      if (isSelected) {
+        this.removeAttribute('data-selected');
+        this.classList.remove('bg-primary', 'text-on-primary');
+        this.classList.add('bg-surface-container', 'text-on-surface');
+      } else {
+        this.setAttribute('data-selected', 'true');
+        this.classList.remove('bg-surface-container', 'text-on-surface');
+        this.classList.add('bg-primary', 'text-on-primary');
+      }
+    });
+  });
+
+  function resetFilters() {
+    document.querySelectorAll('.filter-chip').forEach(button => {
+      button.removeAttribute('data-selected');
+      button.classList.remove('bg-primary', 'text-on-primary');
+      button.classList.add('bg-surface-container', 'text-on-surface');
+    });
+    const selects = document.querySelectorAll('select');
+    selects.forEach(select => select.selectedIndex = 0);
+  }
+</script></main></div><a class="fixed bottom-space-lg right-space-lg z-50 flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary rounded-full shadow-[0_4px_14px_rgba(0,0,0,0.18)] hover:bg-primary-container transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary" data-path="ask-govai" href="#"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">auto_awesome</span><span class="font-label-lg text-label-lg tracking-wide">GovAI • Data Assistant</span></a></body></html>

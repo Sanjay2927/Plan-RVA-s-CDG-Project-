@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-surface": "#0b1c30", "on-error-container": "#93000a", "on-secondary": "#ffffff", "secondary-container": "#86f2e4", "primary-fixed-dim": "#b0c9e8", "on-tertiary": "#ffffff", "surface-container-high": "#dce9ff", "on-secondary-fixed": "#00201d", "surface-bright": "#f8f9ff", "secondary-fixed": "#89f5e7", "on-primary-container": "#7991af", "on-primary-fixed": "#011d35", "tertiary": "#0a0050", "tertiary-container": "#19008b", "on-primary-fixed-variant": "#314863", "on-surface-variant": "#43474d", "on-tertiary-fixed-variant": "#372abf", "on-secondary-container": "#006f66", "surface-variant": "#d3e4fe", "on-primary": "#ffffff", "on-background": "#0b1c30", "error": "#ba1a1a", "outline": "#74777e", "primary-container": "#0f2942", "surface-container-lowest": "#ffffff", "error-container": "#ffdad6", "surface": "#f8f9ff", "on-tertiary-fixed": "#100069", "primary-fixed": "#d1e4ff", "background": "#f8f9ff", "on-secondary-fixed-variant": "#005049", "surface-tint": "#49607c", "inverse-primary": "#b0c9e8", "secondary": "#006a61", "outline-variant": "#c3c6ce", "surface-container-low": "#eff4ff", "primary": "#001428", "inverse-on-surface": "#eaf1ff", "tertiary-fixed-dim": "#c3c0ff", "inverse-surface": "#213145", "tertiary-fixed": "#e3dfff", "surface-dim": "#cbdbf5", "on-tertiary-container": "#847fff", "surface-container": "#e5eeff", "on-error": "#ffffff", "secondary-fixed-dim": "#6bd8cb", "surface-container-highest": "#d3e4fe" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin-desktop": "2rem", "space-xs": "0.25rem", "margin": "1rem", "gutter-desktop": "1.5rem", "margin-tablet": "1.5rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "gutter": "1rem", "space-md": "1rem" }, "fontFamily": { "label-lg": ["Public Sans"], "body-lg": ["Public Sans"], "headline-xl-mobile": ["Public Sans"], "headline-xl": ["Public Sans"], "label-sm": ["Public Sans"], "headline-sm": ["Public Sans"], "tabular-data": ["Public Sans"], "headline-md": ["Public Sans"], "headline-lg": ["Public Sans"], "body-md": ["Public Sans"], "body-sm": ["Public Sans"], "label-md": ["Public Sans"], "headline-lg-mobile": ["Public Sans"] }, "fontSize": { "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}], "body-lg": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-xl-mobile": ["26px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "700"}], "headline-xl": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "label-sm": ["11px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "600"}], "tabular-data": ["13px", {"lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-md": ["18px", {"lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600"}], "headline-lg": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600"}], "body-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400"}], "body-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "headline-lg-mobile": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600"}] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between py-space-md"><div class="flex flex-col gap-space-md"><div class="px-space-md flex items-center gap-space-sm h-14"><div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[20px]">database</span></div><div class="flex flex-col min-w-0"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">Data Catalog</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider truncate">Regional Planning Agency</span></div></div><div class="px-space-md"><div class="bg-surface-container rounded-lg p-space-xs px-space-sm flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span><span class="font-label-sm text-label-sm uppercase tracking-wide text-secondary">Portal Node • Live</span></div></div><nav class="flex flex-col gap-space-xs px-space-md mt-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg"><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[20px]">home</span><span class="font-label-lg text-label-lg flex-1">Home</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="browse-by-topic" href="#"><span class="material-symbols-outlined text-[20px]">folder_open</span><span class="font-label-lg text-label-lg flex-1">Browse by Topic</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="my-datasets" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="font-label-lg text-label-lg flex-1">My Datasets</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="add-dataset" href="#"><span class="material-symbols-outlined text-[20px]">add_box</span><span class="font-label-lg text-label-lg flex-1">Add Dataset</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant">Restricted</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-bold rounded-lg" data-path="ask-govai" href="#"><span class="material-symbols-outlined text-[20px] text-secondary">auto_awesome</span><span class="font-label-lg text-label-lg flex-1">Ask GovAI</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-semibold">GovAI</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="manage-access" href="#"><span class="material-symbols-outlined text-[20px]">lock</span><span class="font-label-lg text-label-lg flex-1">Manage Access</span><span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded bg-primary-container text-on-primary">Admin</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="help" href="#"><span class="material-symbols-outlined text-[20px]">help_center</span><span class="font-label-lg text-label-lg flex-1">Help</span></a></nav></div><div class="px-space-md pt-space-sm"><div class="bg-surface-container-lowest rounded-lg p-space-sm shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[18px]">verified</span><span class="font-label-md text-label-md text-on-surface">RPA Core Standards</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">Compliant with State Geographic &amp; Metadata Directive v4.2</p></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant"><span class="material-symbols-outlined text-[18px]">home_pin</span><span class="font-body-md text-body-md font-medium">Civil Spatial Registry</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="font-label-md text-label-md text-secondary">Internal Catalog View</span></div></div><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs text-on-surface-variant bg-surface-container px-space-sm py-1 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary"></span><span class="font-label-sm text-label-sm text-on-surface font-semibold">Spatial DB: Synced</span></div><div class="flex items-center gap-space-md pl-space-md"><div class="flex flex-col text-right"><span class="font-label-lg text-label-lg text-on-surface leading-tight">Alex Mercer</span><span class="font-label-sm text-label-sm text-tertiary-fixed-dim bg-tertiary px-1.5 py-0.5 rounded tracking-wide font-semibold">Principal Data Manager</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-surface px-space-xl pb-space-xl min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Dimmed Background Catalog Workspace -->
+<div class="w-full pointer-events-none select-none filter blur-[1px] opacity-40 transition-all duration-300">
+<!-- Breadcrumb & Workspace Header -->
+<div class="flex items-center justify-between pb-space-md mb-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<span>Enterprise Repositories</span>
+<span>/</span>
+<span>Demographics &amp; Spatial Units</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Regional Civic Dataset Registry</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-md py-space-xs rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">database</span>
+<span class="font-tabular-data text-tabular-data font-semibold text-on-surface">1,428 Active Entities</span>
+</div>
+<div class="flex items-center gap-space-xs bg-primary text-on-primary px-space-md py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+<span class="font-label-md text-label-md">Filter Registry</span>
+</div>
+</div>
+</div>
+<!-- Catalog Metrics Strip -->
+<div class="grid grid-cols-4 gap-space-md mb-space-xl">
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Validated Spatial Layers</span>
+<div class="font-headline-lg text-headline-lg text-primary mt-space-xs font-bold">892</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">99.4% Georeferenced</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Tabular Series</span>
+<div class="font-headline-lg text-headline-lg text-primary mt-space-xs font-bold">536</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Census &amp; Fiscal updates</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Restricted Administrative Tiers</span>
+<div class="font-headline-lg text-headline-lg text-primary mt-space-xs font-bold">48</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Role-governed clearance</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-lg shadow-sm">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">GovAI Query Frequency</span>
+<div class="font-headline-lg text-headline-lg text-secondary mt-space-xs font-bold">12.8k</div>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Synced to State Metadata v4.2</span>
+</div>
+</div>
+<!-- Underlying Mock Catalog Table -->
+<div class="bg-surface-container-lowest rounded-lg shadow-sm overflow-hidden">
+<div class="bg-surface-container-low px-space-md py-space-sm flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide uppercase">Core Datasets (Indexed)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Displaying 1–4 of 1,428</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary">table_chart</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">County Population Estimates 2020</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tabular Demographic Series • Excel (.xlsx) • Updated March 2026</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-sm py-0.5 rounded font-semibold">Public</span>
+</div>
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary">map</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Regional Parks Boundaries &amp; Conservation Corridors</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vector Polygon Shapefile • EPSG:4326 • Updated February 2026</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-space-sm py-0.5 rounded font-semibold">Internal Restricted</span>
+</div>
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary">layers</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">2026 Metropolitan Transit Arterials &amp; Headways</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Network Dataset • GeoJSON • Updated March 2026</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-space-sm py-0.5 rounded font-semibold">Public</span>
+</div>
+<div class="flex items-center justify-between px-space-md py-space-sm bg-surface-container-low">
+<div class="flex items-center gap-space-md">
+<span class="material-symbols-outlined text-secondary">water_drop</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Municipal Watershed Catchment Zones</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Raster Hydrology Grid • GeoTIFF • Updated January 2026</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high text-on-surface-variant px-space-sm py-0.5 rounded font-semibold">Confidential Tier 2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Soft Dimming Backdrop Scrim -->
+<div class="fixed inset-0 top-16 left-72 bg-primary/20 backdrop-blur-[2px] z-40 transition-opacity"></div>
+<!-- Right-side Sliding Drawer Panel (approx 440px wide) -->
+<aside class="fixed top-16 right-0 bottom-0 w-[450px] bg-surface-container-lowest shadow-[0_10px_25px_-5px_rgba(11,28,48,0.2),0_8px_10px_-6px_rgba(11,28,48,0.1)] z-50 flex flex-col justify-between overflow-hidden transition-transform duration-300" id="govai-drawer">
+<!-- Panel Header -->
+<div class="h-16 px-space-lg bg-surface-container-lowest flex items-center justify-between shrink-0 shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="flex items-center gap-1.5 bg-secondary-container px-2.5 py-1 rounded">
+<span class="material-symbols-outlined text-on-secondary-container text-[16px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container uppercase tracking-wider font-bold">GovAI</span>
+</div>
+<span class="font-headline-md text-headline-md text-on-surface font-semibold tracking-tight">Data Assistant</span>
+</div>
+<div class="flex items-center gap-1">
+<button aria-label="Minimize" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" id="minimize-btn" title="Minimize drawer">
+<span class="material-symbols-outlined text-[20px]">minimize</span>
+</button>
+<button aria-label="Close" class="w-8 h-8 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" id="close-btn" title="Close assistant">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Chat Messages Scroll Area -->
+<div class="flex-1 overflow-y-auto px-space-lg py-space-md flex flex-col gap-space-lg bg-surface-container-low/40" id="chat-messages">
+<!-- Timestamp / Context Pill -->
+<div class="flex items-center justify-center">
+<span class="font-label-sm text-label-sm px-space-sm py-0.5 rounded-full bg-surface-container-high text-on-surface-variant uppercase tracking-wider">
+          Catalog Session • Security Tier II
+        </span>
+</div>
+<!-- Dialogue 1: User message bubble -->
+<div class="flex flex-col items-end gap-1 pl-12">
+<div class="flex items-center gap-space-xs mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">You</span>
+<span class="font-tabular-data text-[10px] text-on-surface-variant/80">14:02</span>
+</div>
+<div class="bg-primary text-on-primary px-space-md py-space-sm rounded-xl rounded-tr-none shadow-sm max-w-full">
+<p class="font-body-md text-body-md text-on-primary leading-snug">Where is the latest population data by county?</p>
+</div>
+</div>
+<!-- Dialogue 2: GovAI assistant response -->
+<div class="flex flex-col items-start gap-space-xs pr-4">
+<div class="flex items-center gap-space-xs mb-0.5">
+<div class="w-4 h-4 rounded bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-[12px]">auto_awesome</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">GovAI Assistant</span>
+<span class="font-tabular-data text-[10px] text-on-surface-variant/80">14:02</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl rounded-tl-none shadow-sm flex flex-col gap-space-sm w-full">
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+            The most recent is 'County Population Estimates 2020' (Excel), owned by J. Doe, last updated Mar 2026.
+          </p>
+<!-- Embedded interactive dataset card -->
+<div class="bg-surface-container-low rounded-lg p-space-sm shadow-sm flex flex-col gap-space-xs">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">table_view</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">County Population Estimates 2020</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Demographics &amp; Civil Census</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-secondary-container text-on-secondary-container px-1.5 py-0.5 rounded font-bold">XLSX</span>
+</div>
+<!-- Metadata key-value list -->
+<div class="grid grid-cols-2 gap-space-xs py-space-xs bg-surface-container-lowest/70 px-space-xs rounded">
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Custodian</span>
+<span class="font-tabular-data text-tabular-data text-on-surface font-medium">J. Doe (Planning)</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-[10px] text-on-surface-variant uppercase tracking-wider">Audit Date</span>
+<span class="font-tabular-data text-tabular-data text-on-surface font-medium">March 14, 2026</span>
+</div>
+</div>
+<!-- Distinct Action Buttons -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 bg-primary text-on-primary hover:bg-primary-container px-space-sm py-1.5 rounded-lg flex items-center justify-center gap-1.5 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span class="font-label-md text-label-md font-semibold">Download</span>
+</button>
+<button class="flex-1 bg-surface-container-high text-on-surface hover:bg-surface-variant px-space-sm py-1.5 rounded-lg flex items-center justify-center gap-1.5 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span class="font-label-md text-label-md font-semibold">View details</span>
+</button>
+</div>
+</div>
+<!-- Bottom Source Tag -->
+<div class="flex items-center gap-1 pt-0.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-[11px] font-semibold text-secondary uppercase tracking-wider">Source: Data Catalog</span>
+</div>
+</div>
+</div>
+<!-- Dialogue 3: User message bubble -->
+<div class="flex flex-col items-end gap-1 pl-12">
+<div class="flex items-center gap-space-xs mb-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">You</span>
+<span class="font-tabular-data text-[10px] text-on-surface-variant/80">14:04</span>
+</div>
+<div class="bg-primary text-on-primary px-space-md py-space-sm rounded-xl rounded-tr-none shadow-sm max-w-full">
+<p class="font-body-md text-body-md text-on-primary leading-snug">Can I edit the parks data?</p>
+</div>
+</div>
+<!-- Dialogue 4: GovAI assistant response -->
+<div class="flex flex-col items-start gap-space-xs pr-4">
+<div class="flex items-center gap-space-xs mb-0.5">
+<div class="w-4 h-4 rounded bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-[12px]">auto_awesome</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-secondary">GovAI Assistant</span>
+<span class="font-tabular-data text-[10px] text-on-surface-variant/80">14:04</span>
+</div>
+<div class="bg-surface-container-lowest p-space-md rounded-xl rounded-tl-none shadow-sm flex flex-col gap-space-sm w-full">
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+            You have Viewer access to 'Regional Parks Boundaries', so you can read and download it. Edit access is assigned by the Principal Data Manager.
+          </p>
+<!-- Access Clearance Notice Pill -->
+<div class="bg-surface-container-low px-space-sm py-1.5 rounded-lg flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[16px]">shield_person</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Your Active Role</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest text-on-surface font-semibold px-2 py-0.5 rounded">Viewer Clearance</span>
+</div>
+<!-- Bottom Source Tag -->
+<div class="flex items-center gap-1 pt-0.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+<span class="font-label-sm text-[11px] font-semibold text-secondary uppercase tracking-wider">Source: Data Catalog</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Controls & Input Tray -->
+<div class="p-space-md bg-surface-container-lowest shrink-0 shadow-[0_-4px_12px_rgba(0,0,0,0.03)] flex flex-col gap-space-sm">
+<!-- Suggested follow-up prompt chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 scrollbar-none">
+<span class="font-label-sm text-[10px] uppercase text-on-surface-variant shrink-0 font-bold tracking-wider">Suggested:</span>
+<button class="chip-btn shrink-0 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm px-space-sm py-1 rounded-full transition-colors flex items-center gap-1 focus:outline-none focus:ring-1 focus:ring-secondary">
+<span class="material-symbols-outlined text-[14px] text-secondary">tune</span>
+<span>Show all GIS files</span>
+</button>
+<button class="chip-btn shrink-0 bg-surface-container-high hover:bg-surface-variant text-on-surface font-label-sm text-label-sm px-space-sm py-1 rounded-full transition-colors flex items-center gap-1 focus:outline-none focus:ring-1 focus:ring-secondary">
+<span class="material-symbols-outlined text-[14px] text-secondary">folder_special</span>
+<span>List datasets in Natural Resources Plan</span>
+</button>
+</div>
+<!-- Message input box -->
+<form class="relative flex items-center" id="chat-form">
+<input class="w-full h-11 pl-space-md pr-12 bg-surface-container-low text-on-surface placeholder:text-on-surface-variant/60 font-body-md text-body-md rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition-all" id="chat-input" placeholder="Ask GovAI…" type="text"/>
+<button aria-label="Send query" class="absolute right-1.5 w-8 h-8 rounded-lg bg-primary hover:bg-primary-container text-on-primary flex items-center justify-center transition-colors focus:outline-none focus:ring-2 focus:ring-secondary" type="submit">
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</form>
+<!-- Institutional Legal / Governance Disclaimer -->
+<div class="flex items-center gap-1.5 text-center justify-center px-space-xs pt-0.5">
+<span class="material-symbols-outlined text-[13px] text-on-surface-variant shrink-0">policy</span>
+<p class="font-body-sm text-[11px] text-on-surface-variant leading-tight">
+          GovAI answers are based on the data catalog and respect your access level
+        </p>
+</div>
+</div>
+</aside>
+</div>
+<script>
+  (function initGovAiDrawer() {
+    const drawer = document.getElementById('govai-drawer');
+    const closeBtn = document.getElementById('close-btn');
+    const minBtn = document.getElementById('minimize-btn');
+    const chatForm = document.getElementById('chat-form');
+    const chatInput = document.getElementById('chat-input');
+    const chatMessages = document.getElementById('chat-messages');
+    const promptChips = document.querySelectorAll('.chip-btn');
+
+    let isMinimized = false;
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        if (drawer) {
+          drawer.style.transform = 'translateX(100%)';
+        }
+      });
+    }
+
+    if (minBtn) {
+      minBtn.addEventListener('click', () => {
+        isMinimized = !isMinimized;
+        if (drawer) {
+          if (isMinimized) {
+            drawer.style.height = '64px';
+            drawer.style.bottom = 'auto';
+            drawer.classList.remove('justify-between');
+          } else {
+            drawer.style.height = '';
+            drawer.style.bottom = '0';
+            drawer.classList.add('justify-between');
+          }
+        }
+      });
+    }
+
+    promptChips.forEach(chip => {
+      chip.addEventListener('click', (e) => {
+        const textSpan = chip.querySelector('span:last-child');
+        if (textSpan && chatInput) {
+          chatInput.value = textSpan.textContent.trim();
+          chatInput.focus();
+        }
+      });
+    });
+
+    if (chatForm && chatInput && chatMessages) {
+      chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const value = chatInput.value.trim();
+        if (!value) return;
+
+        // Append user bubble
+        const userDiv = document.createElement('div');
+        userDiv.className = 'flex flex-col items-end gap-1 pl-12';
+        userDiv.innerHTML = `
+          <div class="flex items-center gap-space-xs mb-0.5">
+            <span class="font-label-sm text-label-sm text-on-surface-variant">You</span>
+            <span class="font-tabular-data text-[10px] text-on-surface-variant/80">Now</span>
+          </div>
+          <div class="bg-primary text-on-primary px-space-md py-space-sm rounded-xl rounded-tr-none shadow-sm max-w-full">
+            <p class="font-body-md text-body-md text-on-primary leading-snug">${escapeHtml(value)}</p>
+          </div>
+        `;
+        chatMessages.appendChild(userDiv);
+        chatInput.value = '';
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+
+        // Micro response simulation
+        setTimeout(() => {
+          const aiDiv = document.createElement('div');
+          aiDiv.className = 'flex flex-col items-start gap-space-xs pr-4';
+          aiDiv.innerHTML = `
+            <div class="flex items-center gap-space-xs mb-0.5">
+              <div class="w-4 h-4 rounded bg-secondary-container flex items-center justify-center">
+                <span class="material-symbols-outlined text-on-secondary-container text-[12px]">auto_awesome</span>
+              </div>
+              <span class="font-label-sm text-label-sm font-semibold text-secondary">GovAI Assistant</span>
+              <span class="font-tabular-data text-[10px] text-on-surface-variant/80">Now</span>
+            </div>
+            <div class="bg-surface-container-lowest p-space-md rounded-xl rounded-tl-none shadow-sm flex flex-col gap-space-sm w-full">
+              <p class="font-body-md text-body-md text-on-surface leading-normal">
+                Querying spatial indexes across State Directive v4.2 standards for "${escapeHtml(value)}"...
+              </p>
+              <div class="flex items-center gap-1 pt-0.5 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[14px] text-secondary">verified</span>
+                <span class="font-label-sm text-[11px] font-semibold text-secondary uppercase tracking-wider">Source: Data Catalog</span>
+              </div>
+            </div>
+          `;
+          chatMessages.appendChild(aiDiv);
+          chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 500);
+      });
+    }
+
+    function escapeHtml(str) {
+      return str.replace(/[&<>'"]/g, 
+        tag => ({
+          '&': '&amp;',
+          '<': '&lt;',
+          '>': '&gt;',
+          "'": '&#39;',
+          '"': '&quot;'
+        }[tag] || tag)
+      );
+    }
+  })();
+</script></main></div><a class="fixed bottom-space-lg right-space-lg z-50 flex items-center gap-space-xs px-space-md py-space-sm bg-primary text-on-primary rounded-full shadow-[0_4px_14px_rgba(0,0,0,0.18)] hover:bg-primary-container transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary" data-path="ask-govai" href="#"><span class="material-symbols-outlined text-secondary-fixed text-[20px]">auto_awesome</span><span class="font-label-lg text-label-lg tracking-wide">GovAI • Data Assistant</span></a></body></html>
